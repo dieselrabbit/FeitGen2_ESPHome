@@ -73,6 +73,7 @@ class BPA800_P : public Component, public LightOutput {
       target_rgb_brightness = remote_brightness;
     }
 
+    // Generally aligns to 1s transition time
     this->completion_ += 0.02;
 
     if (state->current_values == state->remote_values)
